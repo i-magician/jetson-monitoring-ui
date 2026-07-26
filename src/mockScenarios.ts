@@ -2,7 +2,7 @@ const IMAGE_FILES = [
     'frame_001.png', 
     'frame_002.jpg', 
     'frame_003.jpg', 
-    'frame_004.jpg', 
+    'frame_004.png', 
     'frame_005.jpg'
 ]
 
