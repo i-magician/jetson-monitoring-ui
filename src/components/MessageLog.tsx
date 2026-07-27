@@ -8,7 +8,7 @@ export function MessageLog({ events }: Props) {
   return (
     <section className="panel message-log">
       <header className="panel-header">
-        <h2>RabbitMQ Messages</h2>
+        <h2>Data Log Feed</h2>
       </header>
 
       <div className="message-table-wrap">
