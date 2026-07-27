@@ -11,9 +11,9 @@ export function AlertBanner({ anomalyClass, confidence, threshold, onDismiss }: 
     return (
         <div className="alert-banner" role="alert">
             <span>
-                (Low-confidence anomaly (<strong>{anomalyClass}</strong> at{' '}
-                {(confidence * 100).toFixed(1)}%) fell below the {(threshold * 100).toFixed(0)}%
-                threshold and was not flagged.
+                (<strong>High-Confidence anomaly</strong> (<strong>{anomalyClass}</strong> at{' '}
+                {(confidence * 100).toFixed(1)}%) is exceeds the <strong>{(threshold * 100).toFixed(0)}%</strong>
+                threshold.
             </span>
             <button type="button" className="alert-dismiss" onClick={onDismiss} aria-label="Dismiss">
                 <XIcon size={20} />

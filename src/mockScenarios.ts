@@ -8,11 +8,11 @@ const IMAGE_FILES = [
 
 // Ground-truth label for the image at the same index in IMAGE_FILES.
 const ANOMALIES: Array<{ anomalyClass: string | null; confidence: number }> = [
-  { anomalyClass: null, confidence: 0.95 },
-  { anomalyClass: 'broken stitch', confidence: 0.45},
-  { anomalyClass: 'lines', confidence: 0.60 },
+  { anomalyClass: null, confidence: 0.8 },
+  { anomalyClass: 'broken stitch', confidence: 0.60},
+  { anomalyClass: 'lines', confidence: 0.8},
   { anomalyClass: null, confidence: 0.08 },
-  { anomalyClass: 'pinched fabric', confidence: 0.74 },
+  { anomalyClass: 'pinched fabric', confidence: 0.54},
 ];
 
 

@@ -17,9 +17,9 @@ function App() {
   const { current, history, queues, cloud } = useMockStream(playbackIntervalMs);
 
   useEffect(() => {
-    const isLowConfidenceAnomaly =
-      current.anomalyClass !== null && current.confidence < confidenceThreshold;
-    if (!isLowConfidenceAnomaly) return;
+    const isHighConfidenceAnomaly =
+      current.anomalyClass !== null && current.confidence > confidenceThreshold;
+    if (!isHighConfidenceAnomaly) return;
     setPendingAlerts((prev) =>
       prev.some((a) => a.id === current.id) ? prev : [...prev, current]
     );
